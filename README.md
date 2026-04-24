@@ -2,9 +2,9 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![PyPI version](https://img.shields.io/badge/pypi-v0.2.0-orange.svg)](https://pypi.org/project/agentboot/)
+[![PyPI version](https://img.shields.io/badge/pypi-v1.0.0-orange.svg)](https://pypi.org/project/agentboot/)
 [![HF Space](https://img.shields.io/badge/HuggingFace-Demo-yellow.svg)](https://huggingface.co/spaces/Agnuxo1/agentboot-demo)
-[![Status: Alpha](https://img.shields.io/badge/status-alpha-blue.svg)](#roadmap)
+[![Status: Stable](https://img.shields.io/badge/status-stable-green.svg)](#roadmap)
 
 > **AI agent that installs operating systems on bare-metal machines — conversationally, from your phone.**
 
@@ -34,7 +34,7 @@ A junior sysadmin spends hours on this. A senior sysadmin charges $150/hr.
 | | | | (_| |  __/ | | | |_| |_) | (_) | (_) | |_
 \_| |_/\__, |\___|_| |_|\__|____/ \___/ \___/ \__|
 
-  v0.2.0 — Phase 2: Hardware Detection
+  v1.0.0 — Production-ready bare-metal installer
 
 you> /detect
 

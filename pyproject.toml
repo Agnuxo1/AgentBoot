@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agentboot"
-version = "0.3.0"
+version = "1.0.0"
 description = "AI agent for bare-metal hardware detection and OS installation — conversationally"
 readme = "README.md"
 license = { text = "Apache-2.0" }
