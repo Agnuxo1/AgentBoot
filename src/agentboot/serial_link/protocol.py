@@ -32,7 +32,10 @@ MAX_FRAME_BYTES = 256 * 1024
 MessageKind = Literal["cmd", "response", "event", "error"]
 
 
-class ProtocolError(ValueError):
+from agentboot._errors import AgentBootError
+
+
+class ProtocolError(AgentBootError, ValueError):
     """Raised when a received frame is malformed or violates the schema."""
 
 

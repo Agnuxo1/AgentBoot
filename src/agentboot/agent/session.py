@@ -26,7 +26,10 @@ from typing import Any, Optional
 logger = logging.getLogger(__name__)
 
 
-class SessionError(RuntimeError):
+from agentboot._errors import AgentBootError
+
+
+class SessionError(AgentBootError, RuntimeError):
     """Raised on invalid state transitions or corrupt session data."""
 
 

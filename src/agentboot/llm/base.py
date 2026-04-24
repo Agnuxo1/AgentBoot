@@ -35,7 +35,10 @@ class LLMBackend(Protocol):
     ) -> Iterator[str]: ...
 
 
-class LLMError(RuntimeError):
+from agentboot._errors import AgentBootError
+
+
+class LLMError(AgentBootError, RuntimeError):
     """Raised by backends when a generation call fails unrecoverably."""
 
 

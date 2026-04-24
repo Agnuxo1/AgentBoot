@@ -34,7 +34,10 @@ logger = logging.getLogger(__name__)
 FLASH_CHUNK = 4 * 1024 * 1024  # 4 MiB
 
 
-class FlashError(RuntimeError):
+from agentboot._errors import AgentBootError
+
+
+class FlashError(AgentBootError, RuntimeError):
     """Raised by :func:`plan_flash` / :func:`flash_iso` to abort a write."""
 
 

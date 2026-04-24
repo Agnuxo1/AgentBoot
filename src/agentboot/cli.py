@@ -26,6 +26,9 @@ import sys
 from pathlib import Path
 from typing import Optional
 
+from agentboot.config import load_config
+from agentboot.logging_setup import setup_logging
+
 DEFAULT_MODEL = Path(__file__).resolve().parents[2] / "models" / "Qwen3.5-0.8B-UD-Q4_K_XL.gguf"
 
 SYSTEM_PROMPT = (
@@ -607,6 +610,10 @@ def build_parser() -> argparse.ArgumentParser:
         description="AgentBoot — AI agent for bare-metal OS installation.",
     )
     p.add_argument("-v", "--verbose", action="store_true", help="Enable debug logging")
+    p.add_argument(
+        "--config", type=Path, default=None,
+        help="Path to config file (overrides $AGENTBOOT_CONFIG and platform default)",
+    )
     sub = p.add_subparsers(dest="command", metavar="COMMAND")
 
     # chat
@@ -704,15 +711,20 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
 
-    logging.basicConfig(
-        level=logging.DEBUG if args.verbose else logging.INFO,
-        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
-    )
+    try:
+        config = load_config(args.config)
+    except ValueError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+    level = "DEBUG" if args.verbose else config.log_level
+    setup_logging(level=level)
 
     if not getattr(args, "command", None):
         parser.print_help()
         return 1
 
+    args.config_obj = config  # make available to subcommands that want it
     return args.func(args)
 
 

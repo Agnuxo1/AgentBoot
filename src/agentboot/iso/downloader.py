@@ -41,7 +41,10 @@ DEFAULT_TIMEOUT = 60.0
 USER_AGENT = "AgentBoot/0.3 (+https://github.com/Agnuxo1/AgentBoot)"
 
 
-class ChecksumMismatch(RuntimeError):
+from agentboot._errors import AgentBootError
+
+
+class ChecksumMismatch(AgentBootError, RuntimeError):
     """Raised when a downloaded file's SHA256 does not match the expected value."""
 
 
