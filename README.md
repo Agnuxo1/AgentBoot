@@ -196,22 +196,31 @@ and place it under `models/`.
 ### Run
 
 ```bash
-# Interactive chat with hardware detection
-agentboot
+# Full CLI surface (every capability a subcommand):
+agentboot --help
+agentboot detect                                   # local hardware
+agentboot detect --ssh 192.168.1.100 --user root   # remote hardware
+agentboot list-isos --arch x86_64
+agentboot download ubuntu-server-2404 --dest ./iso
+agentboot list-devices
+agentboot flash --iso ./iso/ubuntu-24.04.3-live-server-amd64.iso \
+    --device /dev/sdb --yes-destroy-device /dev/sdb
+agentboot gen-config --os ubuntu-server --user alice \
+    --password-hash '$6$SALT$HASH' --hostname rack-01 --output ./cfg
+agentboot session show --dir ./.agentboot-session
+agentboot install --session-dir ./rack-01 --resume \
+    --download-dir ./rack-01/iso --filter server \
+    --device /dev/sdb --user alice --password-hash '$6$x$y' \
+    --hostname rack-01
 
-# Detect hardware immediately on start
-agentboot
-you> /detect
-
-# Detect a remote machine
-you> /detect ssh 192.168.1.100 22 root
-
-# Filter recommendations to server OS only
-you> /recommend server
-
-# Non-default model
-agentboot --model /path/to/other.gguf
+# Conversational REPL (the original M2 experience)
+agentboot chat --model models/Qwen3.5-0.8B-UD-Q4_K_XL.gguf
 ```
+
+See [docs/USAGE.md](docs/USAGE.md) for the full subcommand reference,
+[docs/OPERATOR.md](docs/OPERATOR.md) for an end-to-end install walkthrough,
+[docs/DEVELOPER.md](docs/DEVELOPER.md) for the architecture,
+and [docs/COLLECTOR.md](docs/COLLECTOR.md) for the bare-metal collector.
 
 ### Run the Demo (Gradio)
 
