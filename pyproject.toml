@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agentboot"
-version = "0.2.0"
+version = "0.3.0"
 description = "AI agent for bare-metal hardware detection and OS installation — conversationally"
 readme = "README.md"
 license = { text = "Apache-2.0" }
@@ -45,6 +45,13 @@ dependencies = [
 ssh    = ["paramiko>=3.4.0"]
 serial = ["pyserial>=3.5"]
 
+# Cloud LLM backends (router fallback when the local model is
+# insufficient or unavailable)
+cloud = [
+    "anthropic>=0.40.0",
+    "google-generativeai>=0.8.0",
+]
+
 # Demo / UI
 demo = ["gradio>=4.36.0"]
 
@@ -57,6 +64,8 @@ dev = [
     "paramiko>=3.4.0",
     "pyserial>=3.5",
     "gradio>=4.36.0",
+    "anthropic>=0.40.0",
+    "google-generativeai>=0.8.0",
 ]
 
 # Install everything
@@ -64,6 +73,8 @@ all = [
     "paramiko>=3.4.0",
     "pyserial>=3.5",
     "gradio>=4.36.0",
+    "anthropic>=0.40.0",
+    "google-generativeai>=0.8.0",
 ]
 
 [project.scripts]
