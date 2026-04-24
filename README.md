@@ -181,11 +181,19 @@ pip install -e ".[serial]"
 pip install -e ".[all,dev]"
 ```
 
-Or via PyPI (once published):
+Or via PyPI:
 
 ```bash
-pip install agentboot
+pip install agentboot-ai           # core
+pip install agentboot-ai[cloud]    # + Anthropic / Gemini fallbacks
+pip install agentboot-ai[local]    # + llama-cpp-python (on-device LLM)
+pip install agentboot-ai[all]      # everything
 ```
+
+> The distribution on PyPI is `agentboot-ai` (the plain `agentboot`
+> name was registered by someone else). The import name is still
+> `agentboot` — `from agentboot.agent import Orchestrator` works as
+> expected after installation.
 
 ### Get the model
 

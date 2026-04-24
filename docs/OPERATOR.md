@@ -7,7 +7,7 @@ This guide walks a single install end-to-end.
 ## 0. Prerequisites
 
 - **On your phone / laptop** (the "operator side"):
-  - AgentBoot installed: `pip install agentboot[all]`
+  - AgentBoot installed: `pip install agentboot-ai[all]`
   - A USB-C / USB-A stick (at least 4 GB; 16 GB recommended)
   - Optional: a Qwen3.5 GGUF model for fully-offline chat
 - **On the target machine**:

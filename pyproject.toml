@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agentboot"
+name = "agentboot-ai"
 version = "1.0.0"
 description = "AI agent for bare-metal hardware detection and OS installation — conversationally"
 readme = "README.md"
