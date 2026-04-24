@@ -7,10 +7,10 @@ that isn't implemented.
 ## Installation
 
 ```bash
-pip install agentboot            # core
-pip install agentboot[cloud]     # + Anthropic / Gemini fallbacks
-pip install agentboot[local]     # + llama-cpp-python for on-device LLM
-pip install agentboot[all]       # everything
+pip install agentboot-ai            # core
+pip install agentboot-ai[cloud]     # + Anthropic / Gemini fallbacks
+pip install agentboot-ai[local]     # + llama-cpp-python for on-device LLM
+pip install agentboot-ai[all]       # everything
 ```
 
 ## Global flags

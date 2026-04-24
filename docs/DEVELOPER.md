@@ -39,7 +39,7 @@ docs/                      # USAGE / OPERATOR / DEVELOPER / COLLECTOR
    detection but does not re-download or re-flash.
 5. **Stdlib first.** Cloud LLMs are optional extras; llama-cpp is an
    optional extra; PyYAML is never a dependency. The core pipeline
-   works with a plain `pip install agentboot`.
+   works with a plain `pip install agentboot-ai`.
 
 ## Testing
 
