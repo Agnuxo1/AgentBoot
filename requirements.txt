@@ -1,2 +1,13 @@
+# Core
 llama-cpp-python>=0.3.20
 huggingface-hub>=0.24.0
+psutil>=5.9.0
+
+# Optional: SSH detection
+# paramiko>=3.4.0
+
+# Optional: USB-serial detection
+# pyserial>=3.5
+
+# Optional: Gradio demo
+# gradio>=4.36.0
