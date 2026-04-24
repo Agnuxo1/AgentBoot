@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+build/
+dist/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Models (large, fetched by scripts/download_model.py)
+models/*.gguf
+models/*.bin
+
+# Env
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
