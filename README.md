@@ -1,5 +1,11 @@
 # AgentBoot
 
+[![PyPI version](https://img.shields.io/pypi/v/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
+[![License](https://img.shields.io/github/license/Agnuxo1/AgentBoot)](https://github.com/Agnuxo1/AgentBoot/blob/main/LICENSE)
+[![Python](https://img.shields.io/pypi/pyversions/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
+[![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/AgentBoot?style=social)](https://github.com/Agnuxo1/AgentBoot)
+
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyPI version](https://img.shields.io/badge/pypi-v1.0.0-orange.svg)](https://pypi.org/project/agentboot/)
@@ -340,3 +346,22 @@ Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
 ## Author
 
 Francisco Angulo de Lafuente — [@Agnuxo1](https://github.com/Agnuxo1)
+
+---
+
+## Related projects
+
+Part of the [@Agnuxo1](https://github.com/Agnuxo1) v1.0.0 open-source catalog (April 2026).
+
+**AgentBoot constellation** — agents and research loops
+- [autoresearch-nano](https://github.com/Agnuxo1/autoresearch) — nanoGPT-based autonomous ML research loop.
+- [The Living Agent](https://github.com/Agnuxo1/The-Living-Agent) — 16x16 Chess-Grid autonomous research agent.
+- [benchclaw-integrations](https://github.com/Agnuxo1/benchclaw-integrations) — Agent-framework adapters for the BenchClaw API.
+
+**CHIMERA / neuromorphic constellation** — GPU-native scientific computing
+- [NeuroCHIMERA](https://github.com/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness) — GPU-native neuromorphic framework on OpenGL compute shaders.
+- [Holographic-Reservoir](https://github.com/Agnuxo1/Holographic-Reservoir) — Reservoir computing with simulated ASIC backend.
+- [ASIC-RAG-CHIMERA](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA) — GPU simulation of a SHA-256 hash engine wired into a RAG pipeline.
+- [QESN-MABe](https://github.com/Agnuxo1/QESN_MABe_V2_REPO) — Quantum-inspired Echo State Network on a 2D lattice (classical).
+- [ARC2-CHIMERA](https://github.com/Agnuxo1/ARC2_CHIMERA) — Research PoC: OpenGL primitives for symbolic reasoning.
+- [Quantum-GPS](https://github.com/Agnuxo1/Quantum-GPS-Unified-Navigation-System) — Quantum-inspired GPU navigator (classical Eikonal solver).
