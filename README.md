@@ -1,8 +1,13 @@
 # AgentBoot
+[![CAJAL](https://img.shields.io/badge/CAJAL-Paper%20Generator-blue)](https://github.com/Agnuxo1/CAJAL)
 
+[![CAJAL](https://img.shields.io/badge/CAJAL-Paper%20Generator-blue)](https://github.com/Agnuxo1/CAJAL)
 [![PyPI version](https://img.shields.io/pypi/v/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
+[![CAJAL](https://img.shields.io/badge/CAJAL-Paper%20Generator-blue)](https://github.com/Agnuxo1/CAJAL)
 [![PyPI downloads](https://img.shields.io/pypi/dm/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
+[![CAJAL](https://img.shields.io/badge/CAJAL-Paper%20Generator-blue)](https://github.com/Agnuxo1/CAJAL)
 [![License](https://img.shields.io/github/license/Agnuxo1/AgentBoot)](https://github.com/Agnuxo1/AgentBoot/blob/main/LICENSE)
+[![CAJAL](https://img.shields.io/badge/CAJAL-Paper%20Generator-blue)](https://github.com/Agnuxo1/CAJAL)
 [![Python](https://img.shields.io/pypi/pyversions/agentboot-ai)](https://pypi.org/project/agentboot-ai/)
 [![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/AgentBoot?style=social)](https://github.com/Agnuxo1/AgentBoot)
 
