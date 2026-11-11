@@ -25,6 +25,10 @@ the right OS, and guides you through the installation step by step.
 
 ---
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Hardware detection and an explicit operating-system catalogue help match existing machines to suitable software, reducing repeated compatibility research during refurbishment or deployment. This can support longer use of available hardware and more consistent installation planning. Fully automated installation remains a roadmap item, so the present benefit is assistance and preparation within the <a href="#roadmap">documented implementation stage</a>.</sub>
+<!-- impact-note:end -->
+
 ## The Problem
 
 > "I need to revive this old server. What OS should I install? Does it support EFI?
